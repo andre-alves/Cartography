@@ -23,3 +23,21 @@ public struct Edge : Property, RelativeEquality, RelativeInequality, Addition, M
         self.item = item
     }
 }
+
+open class SuperEdge {
+    open init() {}
+
+    open func testingAndreCrashA() {
+        let andre = Andre()
+        andre.testingAndreCrashB()
+    }
+}
+
+public final class Andre {
+    public init() {}
+
+    public func testingAndreCrashB() {
+        let vals = [2, 5, 7]
+        print("Vals = \(vals[7])")
+    }
+}
