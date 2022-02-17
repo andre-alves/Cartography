@@ -25,7 +25,7 @@ public struct Edge : Property, RelativeEquality, RelativeInequality, Addition, M
 }
 
 open class SuperEdge {
-    open init() {}
+    public init() {}
 
     open func testingAndreCrashA() {
         let andre = Andre()
